@@ -9,32 +9,48 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 24% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 24% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 24% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* CRF Brand Colors */
+    --primary: 210 24% 16%; /* Azul petróleo escuro #1F2A3C */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 46 96% 59%; /* Amarelo ouro #FDC430 */
+    --secondary-foreground: 210 24% 16%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 11% 96%;
+    --muted-foreground: 210 6% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 46 96% 59%;
+    --accent-foreground: 210 24% 16%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: 46 96% 59%;
+
+    /* Custom CRF Colors */
+    --crf-gold: 46 96% 59%; /* #FDC430 */
+    --crf-dark-blue: 210 24% 16%; /* #1F2A3C */
+    --crf-light-blue: 210 40% 95%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--crf-dark-blue)), hsl(210 30% 8%));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--crf-gold)), hsl(46 100% 65%));
+    --gradient-section: linear-gradient(180deg, hsl(var(--crf-light-blue)), hsl(var(--background)));
+
+    /* Shadows */
+    --shadow-gold: 0 10px 40px -10px hsl(var(--crf-gold) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--crf-dark-blue) / 0.1);
+    --shadow-hero: 0 25px 50px -12px hsl(var(--crf-dark-blue) / 0.25);
 
     --radius: 0.5rem;
 
