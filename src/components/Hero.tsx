@@ -1,13 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone } from "lucide-react";
-
 const Hero = () => {
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/5518996542996?text=Olá! Gostaria de agendar um atendimento na CRF Centro Automotivo.", "_blank");
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-crf-dark-blue via-crf-dark-blue to-primary overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-crf-dark-blue via-crf-dark-blue to-primary overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 border-2 border-crf-gold rounded-full animate-pulse"></div>
@@ -19,11 +16,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="mb-8">
-            <img 
-              src="/lovable-uploads/49a7d715-d856-48d6-b604-81c428b53521.png" 
-              alt="CRF Centro Automotivo" 
-              className="h-32 md:h-40 mx-auto mb-6 drop-shadow-2xl"
-            />
+            <img src="/lovable-uploads/49a7d715-d856-48d6-b604-81c428b53521.png" alt="CRF Centro Automotivo" className="h-32 md:h-40 mx-auto mb-6 drop-shadow-2xl" />
           </div>
 
           {/* Main Heading */}
@@ -47,22 +40,12 @@ const Hero = () => {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              onClick={handleWhatsAppClick}
-              variant="hero" 
-              size="xl"
-              className="w-full sm:w-auto"
-            >
+            <Button onClick={handleWhatsAppClick} variant="hero" size="xl" className="w-full sm:w-auto">
               <MessageCircle className="mr-2" />
               Agende seu atendimento agora
             </Button>
             
-            <Button 
-              onClick={() => window.open("tel:+5518996542996", "_self")}
-              variant="outline" 
-              size="xl"
-              className="w-full sm:w-auto border-crf-gold text-crf-gold hover:bg-crf-gold hover:text-crf-dark-blue"
-            >
+            <Button onClick={() => window.open("tel:+5518996542996", "_self")} variant="outline" size="xl" className="w-full sm:w-auto border-crf-gold text-crf-gold hover:bg-crf-gold hover:text-crf-dark-blue">
               <Phone className="mr-2" />
               (18) 99654-2996
             </Button>
@@ -72,7 +55,7 @@ const Hero = () => {
           <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-crf-gold rounded-full"></div>
-              <span>Mais de 15 anos de experiência</span>
+              <span>Mais de 5 anos de experiência</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-crf-gold rounded-full"></div>
@@ -92,8 +75,6 @@ const Hero = () => {
           <div className="w-1 h-3 bg-crf-gold rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
