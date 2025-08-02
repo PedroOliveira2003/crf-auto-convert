@@ -44,11 +44,6 @@ const Services = () => {
       description: "Diagnóstico computadorizado para identificação precisa de problemas"
     },
     {
-      icon: <Wind className="w-8 h-8" />,
-      title: "Higienização de Ar-condicionado",
-      description: "Limpeza completa e manutenção do sistema de climatização"
-    },
-    {
       icon: <ClipboardCheck className="w-8 h-8" />,
       title: "Revisão Preventiva",
       description: "Check-up completo para evitar problemas futuros"
